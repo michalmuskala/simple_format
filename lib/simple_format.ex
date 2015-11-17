@@ -82,17 +82,7 @@ defmodule SimpleFormat do
   defp insert_brs(text) do
     text
     |> String.split("\n", trim: true)
-    |> do_insert_brs
+    |> Enum.intersperse(["<br>", ?\n])
     |> raw
   end
-
-  defp do_insert_brs([]),
-    do: []
-  defp do_insert_brs([last]),
-    do: [last]
-  defp do_insert_brs([head | tail]) do
-    {:safe, tag} = tag(:br)
-    [head, tag, ?\n | do_insert_brs(tail)]
-  end
-
 end
