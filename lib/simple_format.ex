@@ -1,0 +1,2 @@
+defmodule SimpleFormat do
+end
