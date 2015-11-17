@@ -1,6 +1,16 @@
 # SimpleFormat
 
-**TODO: Add description**
+Rail's simple_format helper for Phoenix.HTML
+
+## Usage
+
+In the view:
+
+    import SimpleFormat
+
+In the template:
+
+    <%= simple_format @message %>
 
 ## Installation
 
