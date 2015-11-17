@@ -2,10 +2,11 @@ defmodule SimpleFormat.Mixfile do
   use Mix.Project
 
   @github_url "https://github.com/michalmuskala/simple_format"
+  @version "0.1.0"
 
   def project do
     [app: :simple_format,
-     version: "0.0.1",
+     version: @version,
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -40,7 +41,7 @@ defmodule SimpleFormat.Mixfile do
   defp docs do
     [extras: ["README.md"],
      source_url: @github_url,
-     source_ref: "v{@version}",
+     source_ref: "v#{@version}",
      main: "extra-readme"]
   end
 end
