@@ -6,6 +6,7 @@ defmodule SimpleFormat.Mixfile do
 
   def project do
     [app: :simple_format,
+     name: "SimpleFormat",
      version: @version,
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
