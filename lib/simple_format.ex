@@ -12,9 +12,9 @@ defmodule SimpleFormat do
   Rail's simple_format helper for Phoenix.HTML
 
   Returns text transformed into HTML using simple formatting rules.
-  Two or more consecutive newlines (\\n\\n) are considered as a paragraph
-  and wrapped in <p> tags. One newline (\\n) is considered as a linebreak
-  and a <br> tag is appended.
+  Two or more consecutive newlines `\n\n` are considered as a paragraph
+  and wrapped in `<p>` tags. One newline `\n` is considered as a linebreak
+  and a `<br>` tag is appended.
 
   ## Usage
 
