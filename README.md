@@ -1,3 +1,8 @@
+**DEPRECATED**:
+this project is deprecated as it's functionality was merged
+directly into `phoenix_html` as
+[Phoenix.HTML.Format.text_to_html/2](http://hexdocs.pm/phoenix_html/Phoenix.HTML.Format.html#text_to_html/2)
+
 # SimpleFormat
 
 Rail's simple_format helper for Phoenix.HTML
